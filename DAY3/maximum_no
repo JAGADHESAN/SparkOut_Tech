@@ -1,0 +1,4 @@
+def maximum(a, b, c):
+    return max(a, b, c)
+
+print("Maximum =", maximum(30, 25, 18))
