@@ -1,0 +1,10 @@
+import pandas as pd
+df=pd.read_csv("students_missing_values.csv")
+print("original data: ")
+print(df)
+print("\n Missing values: ")
+print(df.isnull().sum())
+df["Age"]=df["Age"].fillna(df["Age"].mean())
+df["Marks"]=df["Marks"].fillna(df["Marks"].mean())
+print("\n Data After Handling Missing Values: ")
+print(df)
